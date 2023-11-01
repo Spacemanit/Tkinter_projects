@@ -1,3 +1,5 @@
+# Paint App
+
 from tkinter import *
 from tkinter import colorchooser
 
