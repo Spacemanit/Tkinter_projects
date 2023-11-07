@@ -31,7 +31,7 @@ def generation(bol, df):
     def save_csv():
         file_name = str(fileName.get()) + ".csv"
         df.to_csv(file_name, index=False)
-    save_button = Button(root, text="Save as xls", command=save_csv)
+    save_button = Button(root, text="Save file", command=save_csv)
     save_button.grid(row=rows + 2, column=1)
 
     def update_df(event):
@@ -94,7 +94,7 @@ def open_csv():
     df = pd.read_csv(file_name)
     generation(True, df)
 
-open_button = Button(root, text="Open from csv", command = open_csv)
+open_button = Button(root, text="Open from .csv", command = open_csv)
 open_button.grid(row = 2, column = 2)
 
 root.mainloop()
